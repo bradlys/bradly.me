@@ -45,3 +45,11 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# My crap
+js/scripts.min.js
+css/style.min.css
+
+.idea/
+.sass-cache/
+css/

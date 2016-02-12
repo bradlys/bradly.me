@@ -1,0 +1,381 @@
+@import 'base/_normalize';
+@import 'base/_grid';
+
+
+/* Global */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: #8a8683;
+  background-color:#ffffff;
+}
+img {
+  max-width: 100%;
+}
+a:link {
+  color: #f68f67;
+  text-decoration: none;
+}
+a:hover {
+  color: #bde2df;
+  text-decoration: none;
+}
+a:visited {
+  color: #f68f67;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.round img {
+  -webkit-border-radius: 15%;
+  -moz-border-radius: 15%;
+  -ms-border-radius: 15%;
+  -o-border-radius: 15%;
+  border-radius: 15%;
+}
+
+.btn, input[type=submit] {
+  border: 0;
+  border-bottom: 10px;
+  background: #5786c1;
+  color: white;
+  padding: 8px 14px;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  /* needed for anchors */
+  position: relative;
+  box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae, 5px 4px #3a587f, 4px 5px #4171ae, 6px 5px #3a587f, 5px 6px #4171ae;
+}
+.btn:hover, .btn:focus, .btn.hover, .btn.focus, input[type=submit]:hover, input[type=submit]:focus, input[type=submit].hover, input[type=submit].focus {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae;
+}
+.btn:active, .btn.active, input[type=submit]:active, input[type=submit].active {
+  transform: translate(4px, 4px);
+  box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae;
+}
+
+#bradly {
+  max-width:100%;
+  max-height:100%;
+  -ms-border-radius: 15%;
+  -o-border-radius: 15%;
+  border-radius: 15%;
+  -webkit-border-radius: 15%;
+  overflow:hidden;
+}
+
+.center {
+  margin: auto;
+  text-align: center;
+}
+
+/* General Slides */
+
+.slide {
+  background-attachment: fixed;
+  width:100%;
+  height:auto;
+  position: relative;
+  padding:140px 0;
+}
+
+/* Intro slide */
+
+#intro {
+  background-color:#ffffff;
+}
+#intro h1 {
+  font-size: 3.8em;
+  letter-spacing: -3px;
+  line-height: 0px;
+  color:#8a8683;
+  font-weight: 700;
+}
+#intro h2 {
+  font-size: 2em;
+  color: #8a8683;
+  line-height: 0px;
+  padding-bottom:20px;
+  font-weight: 400;
+}
+#intro h2 {
+  font-size: 2em;
+  color: #8a8683;
+  line-height: 0px;
+  padding-bottom:20px;
+  font-weight: 400;
+  #bradly-name {
+    //Only do this for webkit enabled devices.
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+      background: linear-gradient(270deg, #ff0000, #ff6300, #ffdf00, #8dff00, #06ff00, #00ffc4, #00c9ff, #0059ff, #0100ff, #6700ff, #ff00fa, #ff00a0);
+      background-size: 2000% 2000%;
+      animation: Rainbow 20s ease infinite;
+      @keyframes Rainbow {
+        0% {
+          bakground-position: 0% 50%
+        }
+        50% {
+          background-position: 100% 50%
+        }
+        100% {
+          background-position: 0% 50%
+        }
+      }
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+/* Projects slide */
+
+#projects {
+  background: #d2dae8 url('../images/6n-graf.svg');
+  color:#d7d0c1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#projects h1 {
+  font-size: 3.8em;
+  letter-spacing: -3px;
+  line-height: 0px;
+  color:#37d9d1;
+  font-weight: 700;
+}
+
+/* Check-In App Slide */
+
+$checkinbg: #8FC93A;
+$checkinh1: #E4CC37;
+$checkinp: #000;
+$checkina: #1B3734;
+
+#checkinapp{
+  background-color: $checkinbg;
+  color: $checkinp;
+}
+#checkinapp h1 {
+  font-size: 3.8em;
+  letter-spacing: -3px;
+  line-height: 0px;
+  color: $checkinh1;
+  font-weight: 700;
+}
+#checkinapp a:link {
+  color: $checkina;
+}
+#checkinapp a:visited {
+  color: desaturate($checkina, 50);
+}
+#checkinapp a:hover {
+  color: saturate($checkina, 50);
+}
+
+
+
+/* Game Time slide */
+
+$gametimebg: #BCD2EE;
+$gametimeh1: #9BC1BC;
+$gametimep: #52050A;
+$gametimea: #9B7EDE;
+
+#gametime{
+  background: $gametimebg url('../images/gametime.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $gametimep;
+  font-weight: 400;
+}
+#gametime h1 {
+  font-size: 3.8em;
+  letter-spacing: -3px;
+  line-height: 0px;
+  font-weight: 700;
+  color: $gametimeh1;
+}
+#gametime a:link {
+  color: $gametimea;
+}
+#gametime a:visited {
+  color: desaturate($gametimea, 25);
+}
+#gametime a:hover {
+  color: saturate($gametimea, 50);
+}
+
+/* YouTube Downloader slide */
+
+#ytd {
+  background-color:#b31217;
+  color:#FFFFFF;
+}
+#ytd h1 {
+  font-size: 3.8em;
+  letter-spacing: -3px;
+  line-height: 0px;
+  color:#FFFFFF;
+  font-weight: 700;
+}
+#ytd a:link,
+#ytd a:visited {
+  color: #000000;
+}
+#ytd a:hover {
+  color: #707070;
+}
+
+/* Existential-Jackalope slide */
+
+#jackalope{
+  background: #008834 url('../images/existential-jackalope-bg.jpg') repeat-y;
+  background-size:100%;
+  color:#ffffff;
+}
+#jackalope h1 {
+  font-size: 3.8em;
+  letter-spacing: -3px;
+  line-height: 0;
+  color:#ffffff;
+  font-weight: 700;
+}
+#jackalope a:link,
+#jackalope a:visited {
+  color: rgb(123, 212, 131);
+}
+#jackalope a:hover {
+  color: #b7b700;
+}
+
+/* Job search slide */
+
+$jobbg: #5E565A;
+$jobh1: #FF934F;
+$jobp: #A9CBB7;
+$joba: #EFECCA;
+
+#jobsearch{
+  //background: #008834 url('../images/jobsearch-bg.png') repeat-y;
+  background-size:100%;
+  background-color: $jobbg;
+  color: $jobp;
+  //text-shadow: 2px 2px 10px #fff;
+}
+#jobsearch h1 {
+  font-size: 3.8em;
+  letter-spacing: -3px;
+  line-height: 0;
+  font-weight: 700;
+  text-shadow: none;
+  color: $jobh1;
+}
+#jobsearch a:link {
+  color: $joba;
+}
+#jobsearch a:visited {
+  color: desaturate($joba, 50);
+}
+#jobsearch a:hover {
+  color: saturate($joba, 50);
+}
+
+
+/* Contact */
+
+#contact {
+  background-color: #9bafbf;
+  color: #ffffff;
+}
+#contact a:link,
+#contact a:visited {
+  color: #ffffff
+}
+#contact a:hover {
+  color: #525252;
+}
+
+@media screen and (max-width: 1024px) {
+  #intro h1,
+  #intro h2,
+  #projects h1,
+  #projects h2,
+  #checkinapp h1,
+  #checkinapp h2,
+  #gametime h1,
+  #gametime h2,
+  #ytd h1,
+  #ytd h2,
+  #jackalope h1,
+  #jackalope h2,
+  #jobsearch h1,
+  #jobsearch h2,
+  #contact h1,
+  #contact h2
+  {
+    line-height: 1em;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 640px) {
+
+  #contact .grid_4.omega {
+    margin: 0 2% 5% 0;
+  }
+
+  .slide {
+    background-attachment: fixed;
+    width:100%;
+    position: relative;
+    padding:150px 0;
+  }
+
+  #bradly {
+    display:inherit;
+    max-width:100%;
+    max-height:100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+  }
+
+  #jackalope{
+    background-size:250%;
+    background-position-x: 500px;
+    color:#ffffff;
+  }
+
+  #intro h1,
+  #intro h2,
+  #projects h1,
+  #projects h2,
+  #checkinapp h1,
+  #checkinapp h2,
+  #gametime h1,
+  #gametime h2,
+  #ytd h1,
+  #ytd h2,
+  #jackalope h1,
+  #jackalope h2,
+  #jobsearch h1,
+  #jobsearch h2,
+  #contact h1,
+  #contact h2 {
+    line-height: 1em;
+  }
+
+}
