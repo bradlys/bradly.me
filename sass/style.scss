@@ -101,6 +101,11 @@ ul {
   height:auto;
   position: relative;
   padding:140px 0;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 /* Intro slide */
