@@ -4,7 +4,7 @@ Bradly Schlenker's portfolio website at [bradly.me](http://bradly.me/).
 
 ## Introduction
 
-This is a portfolio website that I created from cool-kitten originally. It has since become so differnet that I've reuploaded the repo as a non-fork.
+This is a portfolio website that I created from cool-kitten originally. It has since become so different that I've reuploaded the repo as a non-fork.
 
 ## Usage
 
